@@ -2,9 +2,9 @@
 
 # Script que ejecuta la prebeplayer
 type mpg123 &> /dev/null
-
+C3 A1 C3 A9 C3 AD C3 B3 C3 BA C3 B1
 if [ $? -ne 0 ]; then
-	echo "El reproductor mpg123 no estA instlaado"
+	echo "El reproductor mpg123 no estA instalado"
 	echo "Lo desea instalar? (s/n)";
 	read -n 1 c;
 	if [ $c == "n" ]; then
@@ -12,21 +12,20 @@ if [ $? -ne 0 ]; then
 		exit 0;
 	elif [ $c == "s" ]; then
 		echo "\nAquI vamos";
-		apt-get install mpg321;
+		apt-get install mpg123;
 		if [ $? -ne 0 ]; then
 			echo No se pudo instalar;
 			exit 0;
 		fi
 	else
-		echo -e "\nOpciOn invalida";
+		echo -e "\nOpci\xc3\xb3n invalida";
 		exit 1;
 	fi
 fi
 
+ft -s "\t\t ¡¡ Bienvenido a la prebeplayer !!\n\n";
 
-./ft.sh -s "\t\t ¡¡ Bienvenido a la prebeplayer !!\n\n";
-
-./ft.sh " Seleccione la opción deseada: ";
+ft -lol " Seleccione la opción deseada: ";
 op1="Reproduce la carpeta actual";
 op2="Subir una carpeta";
 op3="Cambiar de carpeta";
@@ -51,7 +50,7 @@ echo "$msj_ubica" $(pwd)
 				;;
 			"$op2")
 				cd ..
-				echo "Ahora estás en:" "$(pwd)"
+				echo "Ahora est\xc3\a1s en:" "$(pwd)"
 				break
 				read;
 				;;
@@ -80,7 +79,7 @@ echo "$msj_ubica" $(pwd)
 				salida=0;
 				break
 				;;		
-			"*") echo -e Opcion no valida 
+			"*") echo -e Opci\xc3b3\xc3b3n no valida 
 
 esac
 done

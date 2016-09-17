@@ -12,9 +12,9 @@ fi
 for a in $(ls $RUTA); do
 	#echo $a
 	if [ "$a" == "$1" ]; then
-		./ft.sh -f "$RUTA/$a";
+		ft -f "$RUTA/$a";
 	elif [ -d "$RUTA/$a" ]; then
-		./buscar.sh $1 "$RUTA/$a";
+		buscar $1 "$RUTA/$a";
 	fi
 done
 

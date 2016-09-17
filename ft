@@ -4,7 +4,7 @@
 # Argumentos: Nombe del color
 
 if [ $# -eq 0 ]; then
-	./ft.sh amarillo "Comando invalido sin argumentos, use man, -info o -l";
+	ft amarillo "Comando invalido sin argumentos, use man, -info o -l";
 	exit 1;
 fi
 
@@ -50,22 +50,22 @@ if [ "$a" == "-l" ] || [ "$a" == "lista" ]; then
 		argumentos y texto para hacer pruebas\n\n"
 
 	echo -e "Lista de colores (minuscula para claro y mayuscula oscuro):"
-	echo -e $(./ft.sh negro "    negro, -n");
-	echo -e $(./ft.sh rojo "    rojo, -r")" -- "$(./ft.sh Rojo "Rojo, -R");
-	echo -e $(./ft.sh verde "    verde, -v")" -- "$(./ft.sh Verde "Verde, -V");
-	echo -e $(./ft.sh amarillo "    amarillo, -a")" -- "$(./ft.sh Amarillo "Amarillo, -A");
-	echo -e $(./ft.sh azul "    azul, -z")" -- "$(./ft.sh Azul "Azul, -Z");
-	echo -e $(./ft.sh magenta "    magenta, -m")" -- "$(./ft.sh Magenta "Magenta, -M");
-	echo -e $(./ft.sh verdeazul "    verdeazul, -va")" -- "$(./ft.sh Verdeazul "Verdeazul, -VA");
-	echo -e $(./ft.sh gris "    gris, -g")" -- "$(./ft.sh Gris "Gris, -G");
-	echo -e $(./ft.sh blanco "    blanco, -b");
+	echo -e $(ft negro "    negro, -n");
+	echo -e $(ft rojo "    rojo, -r")" -- "$(ft Rojo "Rojo, -R");
+	echo -e $(ft verde "    verde, -v")" -- "$(ft Verde "Verde, -V");
+	echo -e $(ft amarillo "    amarillo, -a")" -- "$(ft Amarillo "Amarillo, -A");
+	echo -e $(ft azul "    azul, -z")" -- "$(ft Azul "Azul, -Z");
+	echo -e $(ft magenta "    magenta, -m")" -- "$(ft Magenta "Magenta, -M");
+	echo -e $(ft verdeazul "    verdeazul, -va")" -- "$(ft Verdeazul "Verdeazul, -VA");
+	echo -e $(ft gris "    gris, -g")" -- "$(ft Gris "Gris, -G");
+	echo -e $(ft blanco "    blanco, -b");
 	echo "";
 	echo -e "Otros formatos:";
-	echo -e $(./ft.sh marcado "    marcado, -f");
-	echo -e $(./ft.sh oscuro "    oscuro, -o");
-	echo -e $(./ft.sh subrayado "    subrayado, -s");
-	echo -e $(./ft.sh parpadeante "    parpadeante, -p");
-	echo -e $(./ft.sh invertido "    invertido, -i");
+	echo -e $(ft marcado "    marcado, -f");
+	echo -e $(ft oscuro "    oscuro, -o");
+	echo -e $(ft subrayado "    subrayado, -s");
+	echo -e $(ft parpadeante "    parpadeante, -p");
+	echo -e $(ft invertido "    invertido, -i");
 
 	if [ $# -ge 3 ]; then
 		echo -e "Su texto con formato es es:";

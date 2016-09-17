@@ -4,4 +4,4 @@
 
 fecha=$( echo "`date +"%d de %B de %Y"`";)
 
-echo -e $(./ft.sh -r "Hoy es ")$(./ft.sh -i "$fecha");
+echo -e $(ft -r "Hoy es ")$(ft -i "$fecha");

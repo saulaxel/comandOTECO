@@ -4,7 +4,7 @@
 
 TIENPO=$(echo  "`date +"%H:%M"`");
 
-echo $(./ft.sh -g "La hora es: ")$(./ft.sh -i $TIENPO)
+echo $(ft -g "La hora es: ")$(ft -i $TIENPO)
 
 #./ft.sh -r -f 
 

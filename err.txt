@@ -1,26 +1,31 @@
-./comandOTECO.sh: line 129: hola: command not found
-./comandOTECO.sh: line 129: que: command not found
-./comandOTECO.sh: line 129: hace: command not found
-./comandOTECO.sh: line 129: hola: command not found
-./comandOTECO.sh: line 129: hola: command not found
-./comandOTECO.sh: line 129: que: command not found
-./comandOTECO.sh: line 129: hace: command not found
-./comandOTECO.sh: line 129: mama: command not found
-./comandOTECO.sh: line 129: cls: command not found
-./comandOTECO.sh: line 129: no: command not found
-./comandOTECO.sh: line 129: hola: command not found
-./comandOTECO.sh: line 129: que: command not found
-./comandOTECO.sh: line 129: hace: command not found
-./comandOTECO.sh: line 129: por: command not found
-./comandOTECO.sh: line 129: xD: command not found
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+./comandOTECO.sh: line 88: hola: command not found
+./comandOTECO.sh: line 88: juego: command not found
+./comandOTECO.sh: line 88: que: command not found
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+./ayuda: line 3: ./ft.sh: No such file or directory
+./ayuda: line 5: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+./ayuda: line 3: ./ft.sh: No such file or directory
+./ayuda: line 5: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 3: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/ayuda: line 5: ./ft.sh: No such file or directory
+/home/ubuntu/workspace/comandOTECO/prebeplayer: line 5: C3: command not found
+/home/ubuntu/workspace/comandOTECO/prebeplayer: line 10: [: ==: unary operator expected
+/home/ubuntu/workspace/comandOTECO/prebeplayer: line 13: [: ==: unary operator expected
 Se presiono ctrl-c
+./comandOTECO.sh: line 90: $'nan\177\177\177\177\177\177\177\177\177\177\177': command not found
+./comandOTECO.sh: line 90: hannoi: command not found
+mv: missing destination file operand after ‘h\177aho\177\177\177\177’
+Try 'mv --help' for more information.
+./comandOTECO.sh: line 90: hanoi: command not found
+./comandOTECO.sh: line 90: $'n\177': command not found
 Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
-Se presiono ctrl-c
+./comandOTECO.sh: line 90: /home/ubuntu/workspace/comandOTECO/ahorcado: No such file or directory

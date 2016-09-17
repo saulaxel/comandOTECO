@@ -4,14 +4,6 @@
 #  de la torre eiffel  dibujada con ascci
 
 # Torre copiada de http://www.chris.com/ascii/index.php?art=places/eiffel%20tower
-if [ $# -lt 2 ]; then
-	exit 1;
-elif [ $1 -lt 99 ] || [ $2 -lt 30 ]; then
-	./ft.sh -f -i -M "\n\n\t\tASDFASDFASDf, El juego no cabe en la pantalla";
-	exit 0;
-fi
-
-read;
 
 # FunciOn para imprimir la torre
 
@@ -39,28 +31,26 @@ function imprimir {
 }
 
 # Entrada espectacular 2.0 (Plageada de nuestro otro juego)
-./entrada.sh
+entrada;
 read;
 clear;
 
 # Inscrucciones
 
-./ft.sh -f "\t\t Bienvenid\x40 al juego de las torres de hannoi";
+ft -f "\t\t Bienvenid\x40 al juego de las torres de hannoi";
 
 if [ $# -eq 3 ]; then 
-	./ft.sh -f "\t Instrucciones:";
-	./ft.sh -g "\t\t Se requiere transladar la torre de la posiciOn 1 a la posicion 3";
-	./ft.sh -g "\t\t  para lo cual se harA uso de la torre intermedia(2)";
-	./ft.sh -g "\t\t Para tal fin se ha dividido la torre horizontalmente en 5 secciones,";
-	./ft.sh -g "\t\t  de las cuales la mAs pesada es la secciOn base, mientras que la ";
-	./ft.sh -g "\t\t  secciOn de la cima es la mAs ligera";
-	./ft.sh -g "\t\t Seras capas de mover la parte de encima de la torre a cualquier ";
-	./ft.sh -g "\t\t  posiciOn seleccionando el nUmero de la posiciOn de origen y destino";
-	./ft.sh -g "\t\t  (nUmero que irA de 1 a 3), por lo que se generarAn subtorres, de las";
-	./ft.sh -g "\t\t  cuales igualmente podrAs mover solo las partes de encima";
-	./ft.sh -g "\t\t Una vez que traslades la torre entera a la posiciOn 3 habras ganado";
-
-
+	ft. -f "\t Instrucciones:";
+	ft -g "\t\t Se requiere transladar la torre de la posici\xc3\xb3n 1 a la posicion 3";
+	ft -g "\t\t  para lo cual se har\xc3\xa1 uso de la torre intermedia(2)";
+	ft -g "\t\t Para tal fin se ha dividido la torre horizontalmente en 5 secciones,";
+	ft -g "\t\t  de las cuales la m\xc3\xa1s pesada es la secci\xc3\xb3n base, mientras que la ";
+	ft -g "\t\t  secci\xc3\xb3n de la cima es la m\xc3\xa1s ligera";
+	ft -g "\t\t Ser\xc3\xa1s capaz de mover la parte de encima de la torre a cualquier ";
+	ft -g "\t\t  posici\xc3\xb3n seleccionando el n\xc3\xbamero de la posici\xc3\xb3n de origen y destino";
+	ft -g "\t\t  (nUmero que ira de 1 a 3), por lo que se generar\xc3\xa1n subtorres, de las";
+	ft -g "\t\t  cuales igualmente podr\xc3\xa1s mover solo las partes de encima";
+	ft -g "\t\t Una vez que traslades la torre entera a la posici\xc3\xb3n 3 habr\xc3\xa1s ganado";
 
 fi
 
@@ -86,7 +76,7 @@ while [ "falso" == $GANASTE ]; do
 	#  de la torre "de_la_torre"
 
 	de_la_torre=0;
-	./ft.sh -f "Ingrese el nUmero de torre del que quiere obtener una secciOn";
+	ft -f "Ingrese el n\xc3\xbamero de torre del que quiere obtener una secci\xc3\xb3n";
 	read -n 1 n;
 	if [ $n -eq 1 ]; then
 		if [ $tope1 -le 5 ]; then
@@ -115,7 +105,7 @@ while [ "falso" == $GANASTE ]; do
 	imprimir;
 
 	if [ $obtenido -ne 6 ]; then
-		./ft.sh -f "Ingrese la torre a la cual mover la secciOn obtenida";
+		ft -f "Ingrese la torre a la cual mover la secci\xc3\xb3n obtenida";
 		read -n 1 n;
 		if [ $n -eq 1 ]; then
 			if [ $tope1 -gt 1 ] && 
@@ -160,6 +150,6 @@ while [ "falso" == $GANASTE ]; do
 	if [ 1 == $tope3 ]; then
 		imprimir;
 		GANASTE="verdadero";
-		./ft.sh -f -a "\n\t Felicitaciones, has ganado el juego de las torres de hannoi";
+		ft -f -a "\n\t Felicitaciones, has ganado el juego de las torres de hannoi";
 	fi
 done
