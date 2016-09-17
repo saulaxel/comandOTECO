@@ -1,0 +1,26 @@
+./comandOTECO.sh: line 129: hola: command not found
+./comandOTECO.sh: line 129: que: command not found
+./comandOTECO.sh: line 129: hace: command not found
+./comandOTECO.sh: line 129: hola: command not found
+./comandOTECO.sh: line 129: hola: command not found
+./comandOTECO.sh: line 129: que: command not found
+./comandOTECO.sh: line 129: hace: command not found
+./comandOTECO.sh: line 129: mama: command not found
+./comandOTECO.sh: line 129: cls: command not found
+./comandOTECO.sh: line 129: no: command not found
+./comandOTECO.sh: line 129: hola: command not found
+./comandOTECO.sh: line 129: que: command not found
+./comandOTECO.sh: line 129: hace: command not found
+./comandOTECO.sh: line 129: por: command not found
+./comandOTECO.sh: line 129: xD: command not found
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c

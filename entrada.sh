@@ -1,0 +1,26 @@
+#!/bin/bash
+
+IFS_ANTERIOR=$IFS;
+IFS=$'\n';
+
+for ((x=17; x>=0; x--)); do
+	clear;
+	i=1;
+	for linea in $(cat muro.txt); do
+		#echo $i" "$x;
+		if [ $i -le $x ]; then
+			echo $linea;
+		fi
+		let i=$i+1;
+	done
+	i=1;
+	for linea in $(cat bienvenida.txt); do
+		if [ $i -ge $x ]; then
+			echo $linea;
+		fi
+		let i=$i+1;
+	done
+
+	sleep 0.2;
+done
+IFS=$IFS_ANTERIOR;
