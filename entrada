@@ -6,7 +6,7 @@ IFS=$'\n';
 for ((x=17; x>=0; x--)); do
 	clear;
 	i=1;
-	for linea in $(cat muro.txt); do
+	for linea in $(cat $1/muro.txt); do
 		#echo $i" "$x;
 		if [ $i -le $x ]; then
 			echo $linea;
@@ -14,7 +14,7 @@ for ((x=17; x>=0; x--)); do
 		let i=$i+1;
 	done
 	i=1;
-	for linea in $(cat bienvenida.txt); do
+	for linea in $(cat $1/bienvenida.txt); do
 		if [ $i -ge $x ]; then
 			echo $linea;
 		fi

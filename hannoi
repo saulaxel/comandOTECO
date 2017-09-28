@@ -8,148 +8,146 @@
 # FunciOn para imprimir la torre
 
 function imprimir {
-	for ((x=1; x<=5; x++)); do
-		i=0; j=0; k=0;
-		#a=$(cat "torre${t1[$x]}.txt");
-		#echo $a;
-		for a in $(cat "torre${t1[$x]}.txt"); do
-			for b in $(cat "torre${t2[$x]}.txt"); do
-				for c in $(cat "torre${t3[$x]}.txt"); do
-					if [ $i -eq $j ] && [ $j -eq $k ]; then
-						echo "$a $b $c";
-					fi
-					let k=$k+1;
-				done
-				k=0;
-				let j=$j+1;
-			done
-			j=0;
-			let i=$i+1;
-		done
-		i=0;
-	done
+    for ((x=1; x<=5; x++)); do
+        i=0; j=0; k=0;
+
+        for a in $(cat "$1/torres_ascii/torre${t1[$x]}.txt"); do
+            for b in $(cat "$1/torres_ascii/torre${t2[$x]}.txt"); do
+                for c in $(cat "$1/torres_ascii/torre${t3[$x]}.txt"); do
+                    if [ $i -eq $j ] && [ $j -eq $k ]; then
+                        echo "$a $b $c"
+                    fi
+                    let k=$k+1
+                done
+                k=0
+                let j=$j+1
+            done
+            j=0
+            let i=$i+1
+        done
+        i=0
+    done
 }
 
 # Entrada espectacular 2.0 (Plageada de nuestro otro juego)
-entrada;
-read;
-clear;
+entrada $1
+read
+clear
 
 # Inscrucciones
 
-ft -f "\t\t Bienvenid\x40 al juego de las torres de hannoi";
+ft -f "\t\t Bienvenid\x40 al juego de las torres de hannoi"
 
-if [ $# -eq 3 ]; then 
-	ft. -f "\t Instrucciones:";
-	ft -g "\t\t Se requiere transladar la torre de la posici\xc3\xb3n 1 a la posicion 3";
-	ft -g "\t\t  para lo cual se har\xc3\xa1 uso de la torre intermedia(2)";
-	ft -g "\t\t Para tal fin se ha dividido la torre horizontalmente en 5 secciones,";
-	ft -g "\t\t  de las cuales la m\xc3\xa1s pesada es la secci\xc3\xb3n base, mientras que la ";
-	ft -g "\t\t  secci\xc3\xb3n de la cima es la m\xc3\xa1s ligera";
-	ft -g "\t\t Ser\xc3\xa1s capaz de mover la parte de encima de la torre a cualquier ";
-	ft -g "\t\t  posici\xc3\xb3n seleccionando el n\xc3\xbamero de la posici\xc3\xb3n de origen y destino";
-	ft -g "\t\t  (nUmero que ira de 1 a 3), por lo que se generar\xc3\xa1n subtorres, de las";
-	ft -g "\t\t  cuales igualmente podr\xc3\xa1s mover solo las partes de encima";
-	ft -g "\t\t Una vez que traslades la torre entera a la posici\xc3\xb3n 3 habr\xc3\xa1s ganado";
+if [ $# -eq 2 ]; then
+    ft. -f "\t Instrucciones:"
+    ft -g "\t\t Se requiere transladar la torre de la posici\xc3\xb3n 1 a la posicion 3"
+    ft -g "\t\t  para lo cual se har\xc3\xa1 uso de la torre intermedia(2)"
+    ft -g "\t\t Para tal fin se ha dividido la torre horizontalmente en 5 secciones,"
+    ft -g "\t\t  de las cuales la m\xc3\xa1s pesada es la secci\xc3\xb3n base, mientras que la "
+    ft -g "\t\t  secci\xc3\xb3n de la cima es la m\xc3\xa1s ligera"
+    ft -g "\t\t Ser\xc3\xa1s capaz de mover la parte de encima de la torre a cualquier "
+    ft -g "\t\t  posici\xc3\xb3n seleccionando el n\xc3\xbamero de la posici\xc3\xb3n de origen y destino"
+    ft -g "\t\t  (nUmero que ira de 1 a 3), por lo que se generar\xc3\xa1n subtorres, de las"
+    ft -g "\t\t  cuales igualmente podr\xc3\xa1s mover solo las partes de encima"
+    ft -g "\t\t Una vez que traslades la torre entera a la posici\xc3\xb3n 3 habr\xc3\xa1s ganado"
 
 fi
 
-# Inicializando la torre
-tope1=1; tope2=6; tope3=6;
 
-t1[1]=1; t2[1]=6; t3[1]=6;
-t1[2]=2; t2[2]=6; t3[2]=6;
-t1[3]=3; t2[3]=6; t3[3]=6;
-t1[4]=4; t2[4]=6; t3[4]=6;
-t1[5]=5; t2[5]=6; t3[5]=6;
+
+# Inicializando la torre
+tope1=1; tope2=6; tope3=6
+
+t1[1]=1; t2[1]=6; t3[1]=6
+t1[2]=2; t2[2]=6; t3[2]=6
+t1[3]=3; t2[3]=6; t3[3]=6
+t1[4]=4; t2[4]=6; t3[4]=6
+t1[5]=5; t2[5]=6; t3[5]=6
 
 # Estos valores se deben quedar constantes
-t1[6]=6; t2[6]=6; t3[6]=6;
+t1[6]=6; t2[6]=6; t3[6]=6
 
 # Ciclo de juego
-GANASTE="falso";
+GANASTE="falso"
 
 while [ "falso" == $GANASTE ]; do
-	imprimir;
+    imprimir $1
 
-	# Variables que se usaran para indicar que el valor "obtenido" fue obtenido
-	#  de la torre "de_la_torre"
+    # Variables que se usaran para indicar que el valor "obtenido" fue obtenido
+    #  de la torre "de_la_torre"
 
-	de_la_torre=0;
-	ft -f "Ingrese el n\xc3\xbamero de torre del que quiere obtener una secci\xc3\xb3n";
-	read -n 1 n;
-	if [ $n -eq 1 ]; then
-		if [ $tope1 -le 5 ]; then
-			obtenido=${t1[$tope1]};
-			de_la_torre=1;
-			t1[$tope1]=6;
-			let tope1=$tope1+1;
-		fi
-	elif [ $n -eq 2 ]; then
-		if [ $tope2 -le 5 ]; then
-			obtenido=${t2[$tope2]};
-			de_la_torre=2;
-			t2[$tope2]=6;
-			let tope2=$tope2+1;
-		fi
-	elif [ $n -eq 3 ]; then
-		if [ $tope3 -le 5 ]; then
-			obtenido=${t3[$tope3]};
-			de_la_torre=3;
-			t3[$tope3]=6;
-			let tope3=$tope3+1;
-		fi
-	fi
+    de_la_torre=0
+    ft -f "Ingrese el n\xc3\xbamero de torre del que quiere obtener una secci\xc3\xb3n"
+    read -n 1 n
+    if [ $n -eq 1 ]; then
+        if [ $tope1 -le 5 ]; then
+            obtenido=${t1[$tope1]}
+            de_la_torre=1
+            t1[$tope1]=6
+            let tope1=$tope1+1
+        fi
+    elif [ $n -eq 2 ]; then
+        if [ $tope2 -le 5 ]; then
+            obtenido=${t2[$tope2]}
+            de_la_torre=2
+            t2[$tope2]=6
+            let tope2=$tope2+1
+        fi
+    elif [ $n -eq 3 ]; then
+        if [ $tope3 -le 5 ]; then
+            obtenido=${t3[$tope3]}
+            de_la_torre=3
+            t3[$tope3]=6
+            let tope3=$tope3+1
+        fi
+    fi
 
-	clear;
-	imprimir;
+    clear
+    imprimir $1
 
-	if [ $obtenido -ne 6 ]; then
-		ft -f "Ingrese la torre a la cual mover la secci\xc3\xb3n obtenida";
-		read -n 1 n;
-		if [ $n -eq 1 ]; then
-			if [ $tope1 -gt 1 ] && 
-			   [ $obtenido -lt ${t1[$tope1]} ]; then
-				let tope1=$tope1-1;
-				t1[tope1]=$obtenido;
-				obtenido=6;
-			fi
-		elif [ $n -eq 2 ]; then
-			if [ $tope2 -gt 1 ] &&
-			   [ $obtenido -lt ${t2[$tope2]} ]; then
-				let tope2=$tope2-1;
-				t2[tope2]=$obtenido;
-				obtenido=6;
-			fi
-		elif [ $n -eq 3 ]; then
-			if [ $tope3 -gt 1 ] &&
-			   [ $obtenido -lt ${t3[$tope3]} ]; then
-				let tope3=$tope3-1;
-				t3[tope3]=$obtenido;
-				obtenido=6;
-			fi
-		fi
-	fi
+    if [ $obtenido -ne 6 ]; then
+        ft -f "Ingrese la torre a la cual mover la secci\xc3\xb3n obtenida"
+        read -n 1 n
+        if [ $n -eq 1 ]; then
+            if [ $tope1 -gt 1 ] && [ $obtenido -lt ${t1[$tope1]} ]; then
+                let tope1=$tope1-1
+                t1[tope1]=$obtenido
+                obtenido=6
+            fi
+        elif [ $n -eq 2 ]; then
+            if [ $tope2 -gt 1 ] && [ $obtenido -lt ${t2[$tope2]} ]; then
+                let tope2=$tope2-1
+                t2[tope2]=$obtenido
+                obtenido=6
+            fi
+        elif [ $n -eq 3 ]; then
+            if [ $tope3 -gt 1 ] && [ $obtenido -lt ${t3[$tope3]} ]; then
+                let tope3=$tope3-1
+                t3[tope3]=$obtenido
+                obtenido=6
+            fi
+        fi
+    fi
 
-	if [ $obtenido -ne 6 ]; then
-		if [ $de_la_torre -eq 1 ]; then
-			let tope1=$tope1-1;
-			t1[$tope1]=$obtenido;
-		elif [ $de_la_torre -eq 2 ]; then
-			let tope2=$tope2-1;
-			t2[$tope2]=$obtenido;
-		elif [ $de_la_torre -eq 3 ]; then
-			let tope3=$tope3-1;
-			t3[$tope3]=$obtenido;
-		fi
-		obtenido=6;
-	fi
-	
-	clear;
+    if [ $obtenido -ne 6 ]; then
+        if [ $de_la_torre -eq 1 ]; then
+            let tope1=$tope1-1
+            t1[$tope1]=$obtenido
+        elif [ $de_la_torre -eq 2 ]; then
+            let tope2=$tope2-1
+            t2[$tope2]=$obtenido
+        elif [ $de_la_torre -eq 3 ]; then
+            let tope3=$tope3-1
+            t3[$tope3]=$obtenido
+        fi
+        obtenido=6
+    fi
 
-	if [ 1 == $tope3 ]; then
-		imprimir;
-		GANASTE="verdadero";
-		ft -f -a "\n\t Felicitaciones, has ganado el juego de las torres de hannoi";
-	fi
+    clear
+
+    if [ 1 == $tope3 ]; then
+        imprimir $1
+        GANASTE="verdadero"
+        ft -f -a "\n\t Felicitaciones, has ganado el juego de las torres de hannoi"
+    fi
 done

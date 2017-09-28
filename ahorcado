@@ -1,0 +1,114 @@
+#!/bin/bash
+
+# Programa para jugar ahorcado
+# Figuras con ascii copiadas de:
+# https://programaresdivertido.wordpress.com/2014/08/29/programando-un-ahorcado-en-consola-con-java-nivel-medio/
+
+ft -i -g "Ahora vas a jugar al ahorcado"
+
+#####       Instrucciones para quien las necesite       ######
+if [ $# -eq 1 ]; then
+    if [ $1 == "-i" ]; then
+        ft -f -G "\t\t\tInstrucciones"
+        ft -G "\tBienvenido a esta versi\xc3\xb3n del clasico juego\n
+            \tdel ahorcado.\n\n
+            \tEl juego consiste en adivinar letra por letra una\n
+            \tpalabra castellana la cual no contendr\xc3\xa1 ni \n
+            \tni acentos ni caracteres especiales (a excepci\xc3\xb3 de\n
+            \tlas \xc3\xb1's)\n\n
+            \tEn un principio se te mostrar\xc3\xa1 una serie de 
+            \tguiones que te indicar\xc3\xa1n la longitud de la\n
+            \tpalabra buscada con base a lo cual eligiras letras
+            \tque creas pueden estar contenidas en la misma, si\n
+            \ttu letra ingresada esta en efecto contenida en la\n
+            \tpalabra, esta sustituir\xc3\xa1 los guiones correspondientes\n
+            \ta su posisi\xc3\xb3n con lo cual estar\xc3\xa1s m\xc3\xa1s\n
+            \tcerca de adivinar la palarba mientras que en el caso\n
+            \tcontrario perder\c3\xa1s una vida.\n\n"
+        ft -G ""
+    fi
+fi
+
+#####       GeneraciOn de palabra por diccionario (y separaciOn de caracteres)      #####
+N=$(($RANDOM%253))
+i=1
+
+for p in $(cat $1/diccionario.txt); do
+    #echo $p" "$i" "$N
+    if [ $i -eq $N ]; then
+        PALABRA=$p
+        #echo $PALABRA
+    fi
+    let i=$i+1
+done
+
+LARGO=${#PALABRA}
+
+for ((x=1; x<=$LARGO; x++)); do
+    p[$x]=`expr substr $PALABRA $x 1`
+    resp[$x]=0
+    #echo ${p[$x]}
+done
+
+#####       Entrada espectacular :)     #####
+read
+entrada $1
+read
+clear
+
+#####       Ciclo de juego      #####
+VIDAS=7
+LETRS_RESTNTS=$LARGO
+
+while [ $VIDAS -gt 1 ] && [ $LETRS_RESTNTS -ne 0 ]; do
+    ft -b -f "\t\tIntente adivinar la palabra secreta\n"
+    let indice=8-$VIDAS
+    cat "$1/ahorcado_ascii/mono"$indice".txt"
+
+    for ((x=1; x<=$LARGO; x++)); do
+        if [ ${resp[$x]} -eq 0 ]; then
+            echo -n " _ "
+        else
+            echo -n " ${p[$x]} "
+        fi
+    done
+    echo ""
+
+    #echo $PALABRA
+    echo -n " Ingrese un caracter:"
+    read -n 1 c
+
+    echo ""
+    ACIERTO=0
+    for ((x=1; x<=$LARGO; x++)); do
+        #echo $c" "${p[$x]}
+        #read
+        if [ "$c" == "${p[$x]}" ]; then
+            resp[$x]=1
+            #echo $LETRS_RESTNTS
+            let LETRS_RESTNTS=$LETRS_RESTNTS-1
+            #echo $LETRS_RESTNTS
+            let ACIERTO=$ACIERTO+1
+        fi
+    done
+
+    clear
+    if [ $ACIERTO -eq 0 ]; then
+        echo "Lo siento, la letra no estA contenida"; 
+        let VIDAS=$VIDAS-1
+    else
+        echo "Una letra menos"
+    fi
+    ACIERTO=0
+done
+
+clear
+if [ $LETRS_RESTNTS -eq 0 ]; then
+    echo -e "\t\t\t"$(ft -f -r "\t\tEfectivamente, es:")$(ft -v -i " $PALABRA")
+    ft -f -r "\t\t\tLa victoria es toda tuya"
+    cat $1"/ahorcado_ascii/mono0.txt"
+else
+    ft -f -Z "\t\t): Suerte para la proxima, la palabra era "
+    ft -f -a "\t\t\t\t$PALABRA"
+    cat $1"/ahorcado_ascii/mono7.txt"
+fi

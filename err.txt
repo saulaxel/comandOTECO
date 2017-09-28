@@ -29,3 +29,207 @@ Try 'mv --help' for more information.
 ./comandOTECO.sh: line 90: $'n\177': command not found
 Se presiono ctrl-c
 ./comandOTECO.sh: line 90: /home/ubuntu/workspace/comandOTECO/ahorcado: No such file or directory
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 98: limpiar: orden no encontrada
+./comandOTECO.sh: línea 98: cls: orden no encontrada
+./comandOTECO.sh: línea 98: inforis: orden no encontrada
+./comandOTECO.sh: línea 98: ahorcado: orden no encontrada
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: q: se esperaba una expresión entera
+/home/saul/github/comandOTECO/hannoi: línea 88: [: q: se esperaba una expresión entera
+/home/saul/github/comandOTECO/hannoi: línea 95: [: q: se esperaba una expresión entera
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: q: se esperaba una expresión entera
+/home/saul/github/comandOTECO/hannoi: línea 88: [: q: se esperaba una expresión entera
+/home/saul/github/comandOTECO/hannoi: línea 95: [: q: se esperaba una expresión entera
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 81: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 88: [: -eq: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 95: [: -eq: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+/home/saul/github/comandOTECO/hannoi: línea 107: [: -ne: se esperaba un operador unario
+/home/saul/github/comandOTECO/hannoi: línea 134: [: -ne: se esperaba un operador unario
+cat: torre1.txt: No existe el archivo o el directorio
+cat: torre2.txt: No existe el archivo o el directorio
+cat: torre3.txt: No existe el archivo o el directorio
+cat: torre4.txt: No existe el archivo o el directorio
+cat: torre5.txt: No existe el archivo o el directorio
+Se presiono ctrl-c
+./comandOTECO.sh: línea 98: $'\fls\177\177\177\177': orden no encontrada
+./comandOTECO.sh: línea 98: USUARIO: orden no encontrada
+./comandOTECO.sh: línea 98: whoiam: orden no encontrada
+Se presiono ctrl-c
+./comandOTECO.sh: línea 100: areyousure?: orden no encontrada
+./comandOTECO.sh: línea 100: /home/saul/github/comandOTECO/areyousure: Permiso denegado
+./comandOTECO.sh: línea 100: estasseguro: orden no encontrada
+Se presiono ctrl-c
+id: «exit»: no existe ese usuario
+Se presiono ctrl-c
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: xD: orden no encontrada
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+Se presiono ctrl-c
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: ./bienvenida.txt: Permiso denegado
+./comandOTECO.sh: línea 102: ./bienvenida.txt: Permiso denegado
+./comandOTECO.sh: línea 102: ./err.txt: Permiso denegado
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: que: orden no encontrada
+./comandOTECO.sh: línea 102: hace: orden no encontrada
+./comandOTECO.sh: línea 102: hola: orden no encontrada
+./comandOTECO.sh: línea 102: que: orden no encontrada
+./comandOTECO.sh: línea 102: hace: orden no encontrada
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 105: ./cm: No existe el archivo o el directorio
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+cat: /torres_ascii/torre1.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre2.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre3.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre4.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre5.txt: No existe el archivo o el directorio
+./hannoi: línea 86: [: -eq: se esperaba un operador unario
+./hannoi: línea 93: [: -eq: se esperaba un operador unario
+./hannoi: línea 100: [: -eq: se esperaba un operador unario
+cat: /torres_ascii/torre1.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre2.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre3.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre4.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre5.txt: No existe el archivo o el directorio
+./hannoi: línea 112: [: -ne: se esperaba un operador unario
+./hannoi: línea 136: [: -ne: se esperaba un operador unario
+cat: /torres_ascii/torre1.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre2.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre3.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre4.txt: No existe el archivo o el directorio
+cat: /torres_ascii/torre5.txt: No existe el archivo o el directorio
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 105: $'\f\177\177\177\177\177': orden no encontrada
+./comandOTECO.sh: línea 105: $'hah\177n\177': orden no encontrada
+./comandOTECO.sh: línea 105: $'hanno9\177': orden no encontrada
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 105: $'l\f\177\177\177\025\177\177\177': orden no encontrada
+./comandOTECO.sh: línea 105: $'s\177': orden no encontrada
+./comandOTECO.sh: línea 105: $'\fl\177\177\177': orden no encontrada
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 105: saul: orden no encontrada
+./comandOTECO.sh: línea 105: $'\E[A': orden no encontrada
+./comandOTECO.sh: línea 105: $'\f': orden no encontrada
