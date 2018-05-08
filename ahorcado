@@ -9,30 +9,36 @@ ft -i -g "Ahora vas a jugar al ahorcado"
 #####       Instrucciones para quien las necesite       ######
 if [ $# -eq 1 ]; then
     if [ $1 == "-i" ]; then
-        ft -f -G "\t\t\tInstrucciones"
-        ft -G "\tBienvenido a esta versi\xc3\xb3n del clasico juego\n
-            \tdel ahorcado.\n\n
-            \tEl juego consiste en adivinar letra por letra una\n
-            \tpalabra castellana la cual no contendr\xc3\xa1 ni \n
-            \tni acentos ni caracteres especiales (a excepci\xc3\xb3 de\n
-            \tlas \xc3\xb1's)\n\n
-            \tEn un principio se te mostrar\xc3\xa1 una serie de 
-            \tguiones que te indicar\xc3\xa1n la longitud de la\n
-            \tpalabra buscada con base a lo cual eligiras letras
-            \tque creas pueden estar contenidas en la misma, si\n
-            \ttu letra ingresada esta en efecto contenida en la\n
-            \tpalabra, esta sustituir\xc3\xa1 los guiones correspondientes\n
-            \ta su posisi\xc3\xb3n con lo cual estar\xc3\xa1s m\xc3\xa1s\n
-            \tcerca de adivinar la palarba mientras que en el caso\n
-            \tcontrario perder\c3\xa1s una vida.\n\n"
+        ft -f -G "\t                   Instrucciones                            "
+        ft -G    "\t Bienvenido a una versión para jugar en consola del       \n
+                  \t clásico juego del ahorcado.                              \n
+                  \t                                                          \n
+                  \t Tu misión será adivinar una palabra común del castellano \n
+                  \t en un número limitado de intentos. La palabra elegida en \n
+                  \t cada ocasión habrá sido despojada de los caracteres      \n
+                  \t especiales del español (a excepción de las ñ's) con la   \n
+                  \t finalidad de dificultar un poco la adivinación.          \n
+                  \t                                                          \n
+                  \t En un inicio solo se te mostrarán una serie de           \n
+                  \t guiones que te indicarán la longitud de la               \n
+                  \t palabra secreta. En base a la longitud de la palabra     \n
+                  \t deberás hacer una suposición sobre se e ingresar una     \n
+                  \t letra.                                                   \n
+                  \t                                                          \n
+                  \t Si tu letra ingresada esta en efecto contenida en la     \n
+                  \t palabra, esta sustituirá los guiones correspondientes    \n
+                  \t a su posición, con lo cual estarás más                   \n
+                  \t cerca de adivinar la palabra mientras que en el caso     \n
+                  \t contrario perderás una vida.                             \n
+                  \t                                                          \n"
         ft -G ""
     fi
 fi
 
-#####       GeneraciOn de palabra por diccionario (y separaciOn de caracteres)      #####
-N=$(($RANDOM%253))
-i=1
+#####       Generación de palabra por diccionario (y separación de caracteres)      #####
+N=$(($RANDOM%253)) # Número mágico (el diccionario está compuesto de 253 entradas)
 
+i=1
 for p in $(cat $1/diccionario.txt); do
     #echo $p" "$i" "$N
     if [ $i -eq $N ]; then

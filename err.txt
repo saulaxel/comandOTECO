@@ -233,3 +233,24 @@ Se presiono ctrl-c
 ./comandOTECO.sh: línea 105: saul: orden no encontrada
 ./comandOTECO.sh: línea 105: $'\E[A': orden no encontrada
 ./comandOTECO.sh: línea 105: $'\f': orden no encontrada
+./comandOTECO.sh: línea 105: limpiar: orden no encontrada
+./comandOTECO.sh: línea 105: hola: orden no encontrada
+./comandOTECO.sh: línea 105: que: orden no encontrada
+./comandOTECO.sh: línea 105: hace: orden no encontrada
+./comandOTECO.sh: línea 105: we: orden no encontrada
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+comandOTECO.sh: línea 105: m: orden no encontrada
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+Se presiono ctrl-c
+./comandOTECO.sh: línea 105: abol: orden no encontrada
+./comandOTECO.sh: línea 105: quit(): orden no encontrada
+./comandOTECO.sh: línea 105: quit: orden no encontrada
